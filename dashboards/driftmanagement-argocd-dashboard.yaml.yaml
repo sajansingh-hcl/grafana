@@ -1,0 +1,10 @@
+apiVersion: grafana.integreatly.org/v1beta1
+kind: GrafanaDashboard
+metadata:
+  name: driftmanagement-argocd-dashboard
+  namespace: monitoring
+spec:
+  instanceSelector:
+    matchLabels:
+      app: grafana
+  jsonFile: driftmanagement-argocd-dashboard.json
